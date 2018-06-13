@@ -17,7 +17,7 @@ def status(host, user, passw):
             oozie_service = service;
             print
             ("Located Oozie Service: " + service.name)
-            print(oozie_service.serviceState + "\n" + oozie_service.healthSummary)
+            print("State:  "+oozie_service.serviceState + "\n" + "Health:  "+oozie_service.healthSummary)
 
         if service.type == "KS_INDEXER":
             print
@@ -26,7 +26,7 @@ def status(host, user, passw):
             ks_indexer_service = service;
             print
             ("Located ks_indexer Service: " + service.name)
-            print(ks_indexer_service.serviceState + "\n" + ks_indexer_service.healthSummary)
+            print("State:  "+ks_indexer_service.serviceState + "\n" + "Health:  "+ks_indexer_service.healthSummary)
 
         if service.type == "SQOOP":
             print
@@ -35,7 +35,7 @@ def status(host, user, passw):
             sqoop_service = service;
             print
             ("Located sqoop Service: " + service.name)
-            print(sqoop_service.serviceState + "\n" + sqoop_service.healthSummary)
+            print("State:  "+sqoop_service.serviceState + "\n" + "Health:  "+sqoop_service.healthSummary)
 
         if service.type == "ZOOKEEPER":
             print
@@ -44,7 +44,7 @@ def status(host, user, passw):
             zookeeper_service = service;
             print
             ("Located zookeeper Service: " + service.name)
-            print(zookeeper_service.serviceState + "\n" + zookeeper_service.healthSummary)
+            print("State:  "+zookeeper_service.serviceState + "\n" + "Health:  "+zookeeper_service.healthSummary)
 
         if service.type == "HUE":
             print
@@ -53,7 +53,7 @@ def status(host, user, passw):
             hue_service = service;
             print
             ("Located hue Service: " + service.name)
-            print(hue_service.serviceState + "\n" + hue_service.healthSummary)
+            print("State:  "+hue_service.serviceState + "\n" + "Health:  "+hue_service.healthSummary)
 
         if service.type == "FLUME":
             print
@@ -62,7 +62,7 @@ def status(host, user, passw):
             flume_service = service;
             print
             ("Located flume Service: " + service.name)
-            print(flume_service.serviceState + "\n" + flume_service.healthSummary)
+            print("State:  "+flume_service.serviceState + "\n" + "Health:  "+flume_service.healthSummary)
 
         if service.type == "IMPALA":
             print
@@ -71,7 +71,7 @@ def status(host, user, passw):
             impala_service = service;
             print
             ("Located impala Service: " + service.name)
-            print(impala_service.serviceState + "\n" + impala_service.healthSummary)
+            print("State:  "+impala_service.serviceState + "\n" + "Health:  "+impala_service.healthSummary)
 
         if service.type == "HDFS":
             print
@@ -80,7 +80,7 @@ def status(host, user, passw):
             hdfs_service = service;
             print
             ("Located hdfs Service: " + service.name)
-            print(hdfs_service.serviceState + "\n" + hdfs_service.healthSummary)
+            print("State:  "+hdfs_service.serviceState + "\n" + "Health:  "+hdfs_service.healthSummary)
 
         if service.type == "SOLR":
             print
@@ -89,7 +89,7 @@ def status(host, user, passw):
             solr_service = service;
             print
             ("Located solr Service: " + service.name)
-            print(solr_service.serviceState + "\n" + solr_service.healthSummary)
+            print("State:  "+solr_service.serviceState + "\n" + "Health:  "+solr_service.healthSummary)
 
         if service.type == "HBASE":
             print
@@ -98,7 +98,7 @@ def status(host, user, passw):
             hbase_service = service;
             print
             ("Located hbase Service: " + service.name)
-            print(hbase_service.serviceState + "\n" + hbase_service.healthSummary)
+            print("State:  "+hbase_service.serviceState + "\n" + "Health:  "+hbase_service.healthSummary)
 
         if service.type == "YARN":
             print
@@ -107,7 +107,7 @@ def status(host, user, passw):
             yarn_service = service;
             print
             ("Located yarn Service: " + service.name)
-            print(yarn_service.serviceState + "\n" + yarn_service.healthSummary)
+            print("State:  "+yarn_service.serviceState + "\n" + "Health:  "+yarn_service.healthSummary)
 
         if service.type == "HIVE":
             print
@@ -116,7 +116,7 @@ def status(host, user, passw):
             hive_service = service;
             print
             ("Located hive Service: " + service.name)
-            print(hive_service.serviceState + "\n" + hive_service.healthSummary)
+            print("State:  "+hive_service.serviceState + "\n" + "Health:  "+hive_service.healthSummary)
 
         if service.type == "SPARK":
             print
@@ -125,7 +125,7 @@ def status(host, user, passw):
             spark_service = service;
             print
             ("Located spark Service: " + service.name)
-            print(spark_service.serviceState + "\n" + spark_service.healthSummary)
+            print("State:  "+spark_service.serviceState + "\n" + "Health:  "+spark_service.healthSummary)
 
         if service.type == "SENTRY":
             print
@@ -134,7 +134,7 @@ def status(host, user, passw):
             sentry_service = service;
             print
             ("Located sentry Service: " + service.name)
-            print(sentry_service.serviceState + "\n" + sentry_service.healthSummary)
+            print("State:  "+sentry_service.serviceState + "\n" + "Health:  "+sentry_service.healthSummary)
 
 
 credentials = sys.argv
