@@ -141,5 +141,4 @@ credentials = sys.argv
 hostname = credentials[2]
 username = credentials[4]
 password = credentials[6]
-print(hostname + " " + username + " " + password)
 status(hostname, username, password)
