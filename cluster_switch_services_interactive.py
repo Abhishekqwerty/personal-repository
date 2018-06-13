@@ -84,106 +84,106 @@ def operations(host, user, passw):
 
 
 def status():
-			print "==================================================="
+			print("===================================================")
 			print("Entered Oozie")
-			print "Located Oozie Service: " + oozie_service.name
+			print("Located Oozie Service: " + oozie_service.name)
 			print(oozie_service.serviceState + "\n" + oozie_service.healthSummary)
 
 
-			print "==================================================="
+			print("===================================================")
 			print("Entered ks_indexer")
-			print "Located ks_indexer Service: " + ks_indexer_service.name
+			print("Located ks_indexer Service: " + ks_indexer_service.name)
 			print(ks_indexer_service.serviceState + "\n" + ks_indexer_service.healthSummary)
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered sqoop")
-			print "Located sqoop Service: " + sqoop_service.name
+			print("Located sqoop Service: " + sqoop_service.name)
 			print(sqoop_service.serviceState + "\n" + sqoop_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered zookeeper")
-			print "Located zookeeper Service: " + zookeeper_service.name
+			print("Located zookeeper Service: " + zookeeper_service.name)
 			print(zookeeper_service.serviceState + "\n" + zookeeper_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered hue")
-			print "Located hue Service: " + hue_service.name
+			print("Located hue Service: " + hue_service.name)
 			print(hue_service.serviceState + "\n" + hue_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered flume")
-			print "Located flume Service: " + flume_service.name
+			print("Located flume Service: " + flume_service.name)
 			print(flume_service.serviceState + "\n" + flume_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered impala")
-			print "Located impala Service: " + impala_service.name
+			print("Located impala Service: " + impala_service.name)
 			print(impala_service.serviceState + "\n" + impala_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered hdfs")
-			print "Located hdfs Service: " + hdfs_service.name
+			print("Located hdfs Service: " + hdfs_service.name)
 			print(hdfs_service.serviceState + "\n" + hdfs_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered solr")
-			print "Located solr Service: " + solr_service.name
+			print("Located solr Service: " + solr_service.name)
 			print(solr_service.serviceState + "\n" + solr_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered hbase")
-			print "Located hbase Service: " + hbase_service.name
+			print("Located hbase Service: " + hbase_service.name)
 			print(hbase_service.serviceState + "\n" + hbase_service.healthSummary)
 		
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered yarn")
-			print "Located yarn Service: " + yarn_service.name
+			print("Located yarn Service: " + yarn_service.name)
 			print(yarn_service.serviceState + "\n" + yarn_service.healthSummary)
 
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered hive")
-			print "Located hive Service: " + hive_service.name
+			print("Located hive Service: " + hive_service.name)
 			print(hive_service.serviceState + "\n" + hive_service.healthSummary)
 
 		
-			print "==================================================="
+			print("===================================================")
 			print("Entered spark")
-			print "Located spark Service: " + spark_service.name
+			print("Located spark Service: " + spark_service.name)
 			print(spark_service.serviceState + "\n" + spark_service.healthSummary)
 
 	
-			print "==================================================="
+			print("===================================================")
 			print("Entered sentry")
-			print "Located sentry Service: " + sentry_service.name
+			print("Located sentry Service: " + sentry_service.name)
 			print(sentry_service.serviceState + "\n" + sentry_service.healthSummary)
 
 def start():
 	print("\nEnter your choice\n")
-	start = input("1.  Start/Restart all services\n2.  Start specific service\n")
+	start = raw_input("1.  Start/Restart all services\n2.  Start specific service\n")   #use input() for python3 interpreter
 	if start == 1:
 		mgmt = api.get_cloudera_manager().get_service()
 		mgmt.restart()
 	elif start == 2:
-		name = input("\nEnter the name of service as in cloudera")
+		name = raw_input("\nEnter the name of service as in cloudera\n")		#use input() for python3 interpreter
 		if name.lower().strip() == "oozie":
 			oozie_service.restart()
 		elif name.lower().strip() == "ks_indexer":
@@ -218,12 +218,12 @@ def start():
 
 def stop():
 	print("\nEnter your choice")
-	stop = input("\n1.  Stop all services\n2.  Stop specific service\n")
+	stop = raw_input("\n1.  Stop all services\n2.  Stop specific service\n")	#use input() for python3 interpreter
 	if stop == 1:
 		mgmt = api.get_cloudera_manager().get_service()
 		mgmt.stop()
 	elif stop == 2:
-		name = input("\nEnter the name of service as in cloudera\n")
+		name = raw_input("\nEnter the name of service as in cloudera\n")	#use input() for python3 interpreter
 		if name.lower().strip() == "oozie":
 			oozie_service.stop()
 		elif name.lower().strip() == "ks_indexer":
@@ -260,5 +260,4 @@ credentials = sys.argv
 hostname = credentials[2]
 username = credentials[4]
 password = credentials[6]
-print(hostname + " " + username + " " + password)
 operations(hostname, username, password)
