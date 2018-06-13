@@ -178,7 +178,7 @@ def status():
 
 def start():
 	print("\nEnter your choice\n")
-	start = raw_input("1.  Start/Restart all services\n2.  Start specific service\n")   #use input() for python3 interpreter
+	start = input("1.  Start/Restart all services\n2.  Start specific service\n")   #use input() for python3 interpreter
 	if start == 1:
 		mgmt = api.get_cloudera_manager().get_service()
 		mgmt.restart()
@@ -218,7 +218,7 @@ def start():
 
 def stop():
 	print("\nEnter your choice")
-	stop = raw_input("\n1.  Stop all services\n2.  Stop specific service\n")	#use input() for python3 interpreter
+	stop = input("\n1.  Stop all services\n2.  Stop specific service\n")	#use input() for python3 interpreter
 	if stop == 1:
 		mgmt = api.get_cloudera_manager().get_service()
 		mgmt.stop()
