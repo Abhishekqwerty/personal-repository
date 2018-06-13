@@ -87,94 +87,94 @@ def status():
 			print("===================================================")
 			print("Entered Oozie")
 			print("Located Oozie Service: " + oozie_service.name)
-			print(oozie_service.serviceState + "\n" + oozie_service.healthSummary)
+			print("State:  "+ oozie_service.serviceState + "\n" + "Health:  "+ oozie_service.healthSummary)
 
 
 			print("===================================================")
 			print("Entered ks_indexer")
 			print("Located ks_indexer Service: " + ks_indexer_service.name)
-			print(ks_indexer_service.serviceState + "\n" + ks_indexer_service.healthSummary)
+			print("State:  "+ks_indexer_service.serviceState + "\n" + "Health:  "+ks_indexer_service.healthSummary)
 
 		
 			print("===================================================")
 			print("Entered sqoop")
 			print("Located sqoop Service: " + sqoop_service.name)
-			print(sqoop_service.serviceState + "\n" + sqoop_service.healthSummary)
+			print("State:  "+sqoop_service.serviceState + "\n" + "Health:  "+sqoop_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered zookeeper")
 			print("Located zookeeper Service: " + zookeeper_service.name)
-			print(zookeeper_service.serviceState + "\n" + zookeeper_service.healthSummary)
+			print("State:  "+zookeeper_service.serviceState + "\n" + "Health:  "+zookeeper_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered hue")
 			print("Located hue Service: " + hue_service.name)
-			print(hue_service.serviceState + "\n" + hue_service.healthSummary)
+			print("State:  "+hue_service.serviceState + "\n" + "Health:  "+hue_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered flume")
 			print("Located flume Service: " + flume_service.name)
-			print(flume_service.serviceState + "\n" + flume_service.healthSummary)
+			print("State:  "+flume_service.serviceState + "\n" + "Health:  "+flume_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered impala")
 			print("Located impala Service: " + impala_service.name)
-			print(impala_service.serviceState + "\n" + impala_service.healthSummary)
+			print("State:  "+impala_service.serviceState + "\n" + "Health:  "+impala_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered hdfs")
 			print("Located hdfs Service: " + hdfs_service.name)
-			print(hdfs_service.serviceState + "\n" + hdfs_service.healthSummary)
+			print("State:  "+hdfs_service.serviceState + "\n" + "Health:  "+hdfs_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered solr")
 			print("Located solr Service: " + solr_service.name)
-			print(solr_service.serviceState + "\n" + solr_service.healthSummary)
+			print("State:  "+solr_service.serviceState + "\n" + "Health:  "+solr_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered hbase")
 			print("Located hbase Service: " + hbase_service.name)
-			print(hbase_service.serviceState + "\n" + hbase_service.healthSummary)
+			print("State:  "+hbase_service.serviceState + "\n" + "Health:  "+hbase_service.healthSummary)
 		
 
 		
 			print("===================================================")
 			print("Entered yarn")
 			print("Located yarn Service: " + yarn_service.name)
-			print(yarn_service.serviceState + "\n" + yarn_service.healthSummary)
+			print("State:  "+yarn_service.serviceState + "\n" + "Health:  "+yarn_service.healthSummary)
 
 
 		
 			print("===================================================")
 			print("Entered hive")
 			print("Located hive Service: " + hive_service.name)
-			print(hive_service.serviceState + "\n" + hive_service.healthSummary)
+			print("State:  "+hive_service.serviceState + "\n" + "Health:  "+hive_service.healthSummary)
 
 		
 			print("===================================================")
 			print("Entered spark")
 			print("Located spark Service: " + spark_service.name)
-			print(spark_service.serviceState + "\n" + spark_service.healthSummary)
+			print("State:  "+spark_service.serviceState + "\n" + "Health:  "+spark_service.healthSummary)
 
 	
 			print("===================================================")
 			print("Entered sentry")
 			print("Located sentry Service: " + sentry_service.name)
-			print(sentry_service.serviceState + "\n" + sentry_service.healthSummary)
+			print("State:  "+sentry_service.serviceState + "\n" + "Health:  "+sentry_service.healthSummary)
 
 def start():
 	print("\nEnter your choice\n")
